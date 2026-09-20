@@ -113,3 +113,4 @@ Admin product create/edit/delete is read-only on Vercel until you attach a hoste
 - Gloucestershire, UK  
 
 © LaseCraft — demo storefront.
+// deploy trigger 2026-09-20T20:46:29Z
