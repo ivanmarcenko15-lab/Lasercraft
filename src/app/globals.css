@@ -1,0 +1,49 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #f5f0e8;
+  --foreground: #0a0a0a;
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer components {
+  .btn-gold {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm bg-gold px-6 py-3 text-sm font-semibold uppercase tracking-wider text-charcoal transition hover:bg-gold-light hover:shadow-gold focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2 focus:ring-offset-cream disabled:opacity-50;
+  }
+  .btn-outline {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm border border-gold px-6 py-3 text-sm font-semibold uppercase tracking-wider text-gold transition hover:bg-gold hover:text-charcoal focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2;
+  }
+  .btn-dark {
+    @apply inline-flex items-center justify-center gap-2 rounded-sm bg-charcoal px-6 py-3 text-sm font-semibold uppercase tracking-wider text-cream transition hover:bg-charcoal-light focus:outline-none focus:ring-2 focus:ring-gold focus:ring-offset-2;
+  }
+  .section-title {
+    @apply font-serif text-3xl font-semibold tracking-tight text-charcoal md:text-4xl;
+  }
+  .section-eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.25em] text-gold;
+  }
+  .input-field {
+    @apply w-full rounded-sm border border-cream-muted bg-white px-4 py-3 text-sm text-charcoal placeholder:text-charcoal/40 focus:border-gold focus:outline-none focus:ring-1 focus:ring-gold;
+  }
+  .card-surface {
+    @apply rounded-sm border border-cream-muted bg-white shadow-soft;
+  }
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+}
