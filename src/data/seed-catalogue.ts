@@ -1,6 +1,6 @@
 /**
- * Demo catalogue shared by prisma/seed.ts and the Vercel/serverless
- * fallback when SQLite is unavailable. Prices in pence (GBP).
+ * Demo catalogue shared by prisma/seed.ts and the seed fallback when
+ * DATABASE_URL is missing or is a file: SQLite URL. Prices in pence (GBP).
  * IDs are stable (`seed-<slug>`) so cart + checkout work without a DB.
  */
 
